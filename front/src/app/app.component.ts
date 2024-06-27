@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BarraNavegacionComponent } from './component/barra-navegacion/barra-navegacion.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
+    SidebarComponent,
     BarraNavegacionComponent,
     FooterComponent,
   ],
