@@ -17,6 +17,10 @@ const ProductoSchema = mongoose.Schema({
 		type:String,
 		require:true
 	} ,
+	categoria:{
+		type:String,
+		require:true
+	},
 	imagen: {
         type: String,
         required: true,
