@@ -3,10 +3,13 @@ import { BarraNavegacionComponent } from './component/barra-navegacion/barra-nav
 import { InicioComponent } from './component/inicio/inicio.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AccesoriosComponent } from './component/accesorios/accesorios.component';
+import { ServiciosComponent } from './component/servicios/servicios.component';
 
 export const routes: Routes = [
-  { path: '', component: InicioComponent},
-  {path: 'accesorios', component: AccesoriosComponent},
+  { path: '', component: InicioComponent },
+  { path: 'accesorios', component: AccesoriosComponent },
+  { path: '', component: InicioComponent },
+  { path: 'servicios/:nombre', component: ServiciosComponent }
+]
 
 
-];
