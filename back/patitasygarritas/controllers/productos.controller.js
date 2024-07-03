@@ -44,7 +44,7 @@ exports.consultaProducto = async (req,res) =>{
 
 exports.actualizarProductos = async (req,res) =>{
 	try {
-		const {nombre_producto,descripcion,cantidad,precio} = req.body;
+		const {nombre_producto,descripcion,cantidad,precio,categoria} = req.body;
 		let Productodata = await ProductosModel.findById(req.params.id)
 		if (!Productodata) {
 			res.status(404).send({mensaje:"No se encontro el producto"})
@@ -54,6 +54,7 @@ exports.actualizarProductos = async (req,res) =>{
 		Productodata.descripcion = descripcion;
 		Productodata.cantidad = cantidad;
 		Productodata.precio = precio;
+		Productodata.categoria = categoria;
 		await ProductosModel.findByIdAndUpdate(req.params.id, Productodata);
 	} catch (error) {
 		console.log(error);

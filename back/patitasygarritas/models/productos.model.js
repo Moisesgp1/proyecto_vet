@@ -16,7 +16,16 @@ const ProductoSchema = mongoose.Schema({
 	precio:{
 		type:String,
 		require:true
-	}
+	} ,
+	categoria:{
+		type:String,
+		require:true
+	},
+	imagen: {
+        type: String,
+        required: true,
+        default: "https://via.placeholder.com/50x50"
+    }
 },{
 		versionKey: false,
 		timestamps:true
