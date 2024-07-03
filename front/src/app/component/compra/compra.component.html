@@ -4,9 +4,15 @@
         <h3 class="fw-bold">Resumen de tu compra</h3>
         <hr>
         <div class="col-12 col-lg-8">
-            <section id="lista-productos"></section>
+            <section id="lista-productos">
+              @for (item of dataCarrito; track item._id) {
+                <div class="card">
+                  <h4>{{item.nombre_producto}}</h4>
+                </div>
+              }
+            </section>
             <div class="d-flex justify-content-end">
-                <button class="btn btn-danger px-5 py-3 fw-bold" id="btn-borrar-carro">Eliminar carrito</button>
+                <button type="button" (click)="eliminarCarrito()" class="btn btn-danger px-5 py-3 fw-bold" id="btn-borrar-carro">Eliminar carrito</button>
             </div>
         </div>
         <div class="col-12 col-lg-4">

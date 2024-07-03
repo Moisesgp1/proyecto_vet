@@ -2,7 +2,6 @@ const express = require(`express`);
 const router = express.Router();
 const UsuarioController = require(`../controllers/usuario.controller`)
 const ProductoController = require(`../controllers/productos.controller`)
-const AccesorioController =require (`../controllers/accesorios.controller`)
 
 router.post(`/crear-Usuario`,UsuarioController.crearUsuario)
 router.get(`/consultas-Usuarios`,UsuarioController.consultasUsuarios)
@@ -16,13 +15,6 @@ router.get(`/consultas-Productos`,ProductoController.consultasProductos)
 router.get(`/consulta-Producto/:busqueda`,ProductoController.consultaProducto)
 router.put(`/actualizar-Producto/:id`,ProductoController.actualizarProductos)
 router.delete(`/borrar-Producto/:id`,ProductoController.BorrarProducto)
-
-
-router.post(`/crear-Accesorio`,AccesorioController.crearAccesorio)
-router.get(`/constas-Accesorios`,AccesorioController.consultasAccesorios)
-router.get(`/consulta-Accesorio/:busqueda`,AccesorioController.consultaAccesorio)
-router.put(`/actualizar-Accesorio/:id`,AccesorioController.actualizarAccesorio)
-router.delete(`/borrar-Accesorio/:id`,AccesorioController.BorrarAccesorio)
 
 
 

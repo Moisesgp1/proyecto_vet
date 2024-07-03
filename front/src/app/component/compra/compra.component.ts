@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductosComponent } from '../productos/productos.component';
 
 @Component({
   selector: 'app-compra',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './compra.component.css'
 })
 export class CompraComponent {
+
+  dataCarrito:any
+
+  ngOnInit():void{
+    let data:any = localStorage.getItem("carrito")
+    this.dataCarrito = JSON.parse(data)
+  }
+
+  eliminarCarrito(){
+    localStorage.removeItem("carrito")
+  }
 
 }
