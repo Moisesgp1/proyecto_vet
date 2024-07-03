@@ -19,6 +19,8 @@ export class CompraComponent {
 
   eliminarCarrito(){
     localStorage.removeItem("carrito")
+    let data:any =localStorage.getItem("carrito")
+    this.dataCarrito = JSON.parse(data)
   }
 
 }
