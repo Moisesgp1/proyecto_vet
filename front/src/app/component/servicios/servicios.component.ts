@@ -38,6 +38,6 @@ export class ServiciosComponent {
   }
 
   prueba(fecha:any){
-    alert("dio click sdsddsus89ttdihihgfidfghfihjgfihufufudfiudidiudidufhghghh en fecha:" + fecha)
+    alert("Su cita quedo agendada para el dia: " + fecha)
   }
 }
