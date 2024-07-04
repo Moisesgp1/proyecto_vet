@@ -30,4 +30,3 @@ button::after, button::before {
 button:hover::after, button:hover::before {
   width: 100%;
 }
-
