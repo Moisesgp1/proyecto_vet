@@ -12,9 +12,27 @@ exports.crearProducto = async (req,res) =>{
 }
 
 
-exports.consultasProductos =async (req,res) =>{
+exports.consultasAlimentos =async (req,res) =>{
 	try {
-		const InfoProducto = await ProductosModel.find()
+		const InfoProducto = await ProductosModel.find({categoria: "alimento"})
+		res.status(200).send(InfoProducto)
+	} catch (error) {
+		console.log(error);
+        res.status(500).send("Hubo un problema al consultar los productos");
+	}
+}
+exports.consultasAccesorios =async (req,res) =>{
+	try {
+		const InfoProducto = await ProductosModel.find({categoria:"juguete"})
+		res.status(200).send(InfoProducto)
+	} catch (error) {
+		console.log(error);
+        res.status(500).send("Hubo un problema al consultar los productos");
+	}
+}
+exports.consultaFarmacia =async (req,res) =>{
+	try {
+		const InfoProducto = await ProductosModel.find({categoria:"farmacia"})
 		res.status(200).send(InfoProducto)
 	} catch (error) {
 		console.log(error);

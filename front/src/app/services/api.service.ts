@@ -10,7 +10,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getProductos(){
-    return this.http.get(`${this.apiUrl}/consultas-Productos`)
+  getProductos(complementoURL:string = "alimentos"){
+    return this.http.get(`${this.apiUrl}/consultas-${complementoURL}`)
   }
 }
