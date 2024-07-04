@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-accesorios',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './accesorios.component.html',
   styleUrl: './accesorios.component.css'
 })
 export class AccesoriosComponent {
-  dataProductos:any
+  dataAlimentos:any
+  dataAccesorios:any
+  dataFarmacia:any
   dataCarritoLS:any = []
 
   constructor(private _apiServicio: ApiService){}
@@ -23,10 +28,17 @@ export class AccesoriosComponent {
   }
 
   obtenerProductos(){
-    this._apiServicio.getProductos().subscribe((data:any) => {
-      this.dataProductos = data
-      console.log(this.dataProductos);
-
+    this._apiServicio.getProductos("alimentos").subscribe((data:any) => {
+      this.dataAlimentos = data
+      console.log(this.dataAlimentos);
+    })
+    this._apiServicio.getProductos("farmacia").subscribe((data:any) => {
+      this.dataFarmacia = data
+      console.log(this.dataAlimentos);
+    })
+    this._apiServicio.getProductos("accesorios").subscribe((data:any) => {
+      this.dataAccesorios = data
+      console.log(this.dataAlimentos);
     })
   }
 

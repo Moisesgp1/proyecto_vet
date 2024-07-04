@@ -4,12 +4,15 @@
         <h3 class="fw-bold">Resumen de tu compra</h3>
         <hr>
         <div class="col-12 col-lg-8">
-            <section id="lista-productos">
+            <section  id="lista-productos">
               @for (item of dataCarrito; track item._id) {
-                <div class="card">
-                  <h4>{{item.nombre_producto}}</h4>
-                  <h5>{{item.descripcion}}</h5>
-                  <h6>{{item.precio}}</h6>
+                <div class="card d-flex justify-content-center align-content-center">
+                  <div class="imgProducto d-flex justify-content-center align-content-center" [style]="'background: url('+item.imagen+')'">
+                    <h4 class=" px-lg-1 py-lg-5">{{item.nombre_producto}}</h4>
+                    <h5 class=" px-lg-1 py-lg-5">{{item.descripcion}}</h5>
+                    <h6 class=" px-lg-1 py-lg-5">{{item.precio}}</h6>
+                  </div>
+
                 </div>
               }
             </section>
@@ -89,7 +92,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="btn btnPagar mt-3 fw-bold w-100 py-3">Proceder al pago</button>
+            <button class="btn btnPagar btn-primary mt-3 fw-bold w-100 py-3">Proceder al pago</button>
         </div>
     </div>
 </div>

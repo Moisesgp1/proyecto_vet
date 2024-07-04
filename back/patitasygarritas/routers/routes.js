@@ -11,7 +11,11 @@ router.delete(`/borrar-Usuario/:id`,UsuarioController.BorrarUsuario)
 
 
 router.post(`/crear-Producto`,ProductoController.crearProducto)
-router.get(`/consultas-Productos`,ProductoController.consultasProductos)
+
+router.get(`/consultas-alimentos`,ProductoController.consultasAlimentos)
+router.get(`/consultas-farmacia`,ProductoController.consultaFarmacia)
+router.get(`/consultas-accesorios`,ProductoController.consultasAccesorios)
+
 router.get(`/consulta-Producto/:busqueda`,ProductoController.consultaProducto)
 router.put(`/actualizar-Producto/:id`,ProductoController.actualizarProductos)
 router.delete(`/borrar-Producto/:id`,ProductoController.BorrarProducto)
