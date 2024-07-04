@@ -32,3 +32,6 @@ button:hover::after, button:hover::before {
   width: 100%;
 }
 
+.servicio{
+  text-color: rgb(206, 15, 15)
+}
