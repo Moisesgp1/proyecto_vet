@@ -4,6 +4,7 @@ import { BarraNavegacionComponent } from './component/barra-navegacion/barra-nav
 import { FooterComponent } from './component/footer/footer.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,4 +19,5 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
 })
 export class AppComponent {
   title = 'proyecto_final';
+
 }

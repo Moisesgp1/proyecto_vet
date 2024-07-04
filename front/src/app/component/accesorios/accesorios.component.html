@@ -1,5 +1,5 @@
 <section>
-  <h1 class="p-3"> Accesorios</h1>
+  <h1 class="p-3 productos">Accesorios</h1>
   <div class="container text-center m-lg-5">
     <div class="row">
       @for (producto of dataAccesorios; track producto._id) {
@@ -11,7 +11,9 @@
               <h5>{{producto.descripcion}}</h5>
               <h6>{{producto.precio}}</h6>
               <div>
-                <button type="button" class="btn btn-primary px-4 py-3 fw-bold" (click)="agregarProductoCarrito(producto)">agregar al carrito</button>
+
+                <button class="custom-btn btn-1" (click)="agregarProductoCarrito(producto) ">Read More</button>
+
               </div>
             </div>
           </div>
@@ -22,7 +24,7 @@
 </section>
 
 <section>
-  <h1 class="p-3"> Farmacia</h1>
+  <h1 class="p-3 farmacia">Farmacia</h1>
   <div class="container text-center m-lg-5">
     <div class="row">
       @for (producto of dataFarmacia; track producto._id) {
@@ -44,8 +46,8 @@
   </div>
 </section>
 
-<section>
-  <h1 class="p-3"> Productos</h1>
+<section >
+  <h1 class="p-3 ">Alimentos</h1>
   <div class="d-flex justify-content-end">
     <a class="fa-solid fa-cart-shopping px-4 py-3 fw-bold"></a>
   </div>

@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-compra',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './compra.component.html',
   styleUrl: './compra.component.css'
 })

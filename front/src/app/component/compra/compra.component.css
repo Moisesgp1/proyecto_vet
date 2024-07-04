@@ -3,3 +3,7 @@
   background-repeat: no-repeat !important;
   background-size: contain !important;
 }
+
+.card {
+  background-color: rgba(127, 32, 190, 0.205);
+}

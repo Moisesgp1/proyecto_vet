@@ -1,5 +1,5 @@
-<div class="container-fluid contenedormenu ">
-  <div class="row flex-nowrap">
+<div class="container-fluid contenedormenu">
+  <div class="items row flex-nowrap">
     <div class="col-row-2 col-md-3 col-xl-2 px-sm-2 px-0 ">
       <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <span class="fs-5 d-none d-sm-inline"></span>
@@ -7,27 +7,15 @@
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center mb-4 mt-4" id="menu">
         <li class="nav-item">
           <a href="" class="nav-link px-0 align-middle">
-            <button class="ms-1 d-none d-sm-inline">
+            <button class="ms-1 d-none d-sm-inline p-3 m-lg-2">
               Inicio
-            </button>
-          </li>
-          <li>
-            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-              <button class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-store"></i>
+            </button></a>
+
+            <a routerLink="/accesorios" routerLinkActive="router-link-active" class="nav-link px-0 align-middle">
+              <button class=" ms-1 d-none d-sm-inline"><i class="fa-solid fa-store"></i>
                 Tienda
               </button></a>
-            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-              <li class="w-100">
-                <a routerLink="/accesorios" routerLinkActive="router-link-active"  class="nav-link px-0"> <span class="d-none d-sm-inline text-light">Accesorios</span></a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-light">Farmacia</span></a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-light">Comida</span></a>
-              </li>
-            </ul>
-          </li>
+
           <li>
             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
               <button class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-shield-dog"></i>
@@ -46,12 +34,11 @@
             </ul>
           </li>
           <li>
-            <a href="http://localhost:4200/servicios/Clientes" class="nav-link px-0 align-middle">
+            <a routerLink="/compra" class="nav-link px-0 align-middle">
               <button class="ms-1 d-none d-sm-inline"><i class="fa-regular fa-user"></i>
-                Tienda
+                resumen Compra
               </button></a>
           </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
+
+
