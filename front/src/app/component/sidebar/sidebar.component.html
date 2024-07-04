@@ -5,37 +5,40 @@
         <span class="fs-5 d-none d-sm-inline"></span>
       </a>
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center mb-4 mt-4" id="menu">
-        <li class="nav-item">
-          <a href="" class="nav-link px-0 align-middle">
+        <li class="nav-item" style="width: 215px;">
+          <a href="" class="nav-link px-0 align-middle text-center">
             <button class="ms-1 d-none d-sm-inline p-3 m-lg-2">
               Inicio
             </button></a>
 
-            <a routerLink="/accesorios" routerLinkActive="router-link-active" class="nav-link px-0 align-middle">
-              <button class=" ms-1 d-none d-sm-inline"><i class="fa-solid fa-store"></i>
+            <a routerLink="/accesorios" routerLinkActive="router-link-active" class="nav-link px-0 align-middle text-center">
+              <button class=" ms-1 d-none d-sm-inline"><i class="fa-solid fa-store me-3"></i>
                 Tienda
               </button></a>
 
           <li>
             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-              <button class="ms-1 d-none d-sm-inline"><i class="fa-solid fa-shield-dog"></i>
+              <button class="  ms-1 d-none d-sm-flex flex-row justify-content-center align-items-center me-3">
+                <i class="fa-solid fa-shield-dog me-3"></i>
                 servicios
               </button></a>
-            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu" style="width: 215px;">
               <li class="w-100">
-                <a href="http://localhost:4200/servicios/consulta" class="nav-link px-0"> <span class=" servicio d-none d-sm-inline text-light">Consulta</span></a>
+                <a href="http://localhost:4200/servicios/consulta" class="nav-link text-center px-0">
+                  <div class=" servicio d-none d-sm-inline text-light">Consulta</div>
+                </a>
               </li>
               <li>
-                <a href="http://localhost:4200/servicios/lavado" class="nav-link px-0"> <span class=" servicio d-none d-sm-inline text-light">Baño</span></a>
+                <a href="http://localhost:4200/servicios/lavado" class="nav-link text-center px-0"> <div class=" servicio d-none d-sm-inline text-light">Baño</div></a>
               </li>
               <li>
-                <a href="http://localhost:4200/servicios/guarderia" class="nav-link px-0"> <span class=" servicio d-none d-sm-inline text-light">Guarderia</span></a>
+                <a href="http://localhost:4200/servicios/guarderia" class="nav-link text-center px-0"> <div class=" servicio d-none d-sm-inline text-light">Guarderia</div></a>
               </li>
             </ul>
           </li>
           <li>
             <a routerLink="/compra" class="nav-link px-0 align-middle">
-              <button class="ms-1 d-none d-sm-inline"><i class="fa-regular fa-user"></i>
+              <button class=" ms-1 d-none d-sm-flex flex-row justify-content-center align-items-center"><i class="fa-regular fa-user me-3"></i>
                 resumen Compra
               </button></a>
           </li>

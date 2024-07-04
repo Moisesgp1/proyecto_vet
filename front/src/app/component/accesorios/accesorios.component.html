@@ -1,5 +1,8 @@
 <section>
   <h1 class="p-3 productos">Accesorios</h1>
+  <div class="align-content-end">
+  </div>
+
   <div class="container text-center m-lg-5">
     <div class="row">
       @for (producto of dataAccesorios; track producto._id) {
@@ -12,7 +15,7 @@
               <h6>{{producto.precio}}</h6>
               <div>
 
-                <button class="custom-btn btn-1" (click)="agregarProductoCarrito(producto) ">Read More</button>
+                <button class="custom-btn btn-1" (click)="agregarProductoCarrito(producto) ">agregar</button>
 
               </div>
             </div>
@@ -36,7 +39,7 @@
               <h5>{{producto.descripcion}}</h5>
               <h6>{{producto.precio}}</h6>
               <div>
-                <button type="button" class="btn btn-primary px-4 py-3 fw-bold" (click)="agregarProductoCarrito(producto)">agregar al carrito</button>
+                <button type="button" class="custom-btn btn-1 px-4 py-3 fw-bold" (click)="agregarProductoCarrito(producto)">agregar</button>
               </div>
             </div>
           </div>
@@ -49,7 +52,7 @@
 <section >
   <h1 class="p-3 ">Alimentos</h1>
   <div class="d-flex justify-content-end">
-    <a class="fa-solid fa-cart-shopping px-4 py-3 fw-bold"></a>
+
   </div>
   <div class="container text-center m-lg-5">
     <div class="row">
@@ -62,7 +65,7 @@
               <h5>{{producto.descripcion}}</h5>
               <h6>{{producto.precio}}</h6>
               <div>
-                <button type="button" class="btn btn-primary px-4 py-3 fw-bold" (click)="agregarProductoCarrito(producto)">agregar al carrito</button>
+                <button type="button" class="custom-btn btn-1 px-4 py-3 fw-bold" (click)="agregarProductoCarrito(producto)">agregar</button>
               </div>
             </div>
           </div>

@@ -46,3 +46,8 @@
  .card-body{
   background-color: rgba(189, 20, 161, 0.171);
  }
+
+ .card{
+  border-radius: 30px;
+   }
+
